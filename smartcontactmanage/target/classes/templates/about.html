@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{base::layout(~{::section})}">
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<style>
+		/* Add custom CSS animations */
+		@keyframes fadeIn {
+			0% {
+				opacity: 0;
+				transform: translateX(-20px);
+			}
+
+			100% {
+				opacity: 1;
+				transform: translateX(0);
+			}
+		}
+
+		.animated-fadeIn {
+			animation: fadeIn 1s;
+		}
+
+		/* Additional custom styling */
+		.feature-image {
+			display: flex;
+			align-items: center;
+		}
+		.uniform-image {
+            width: 250px; /* Set the width as needed */
+            height: 250px; /* Set the height as needed */
+            object-fit: cover; /* Preserve aspect ratio and cover the container */
+        }
+	</style>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+</head>
+
+<body>
+	<section>
+		<div style="background-color: #e2e2e2;">
+		<!-- About Section -->
+		<div class="container text-center mt-5" >
+			<h1>About Smart Contact Manager</h1>
+			<p class="lead">Your all-in-one solution for managing your contacts efficiently.</p>
+		</div>
+
+		<!-- Feature Section -->
+		
+		<div class="container my-5">
+			<div class="row" style="display: flex; align-items: center; ">
+				<div class="col-md-6 feature-image">
+					<img src="https://www.bostonscientific.com/en-US/medical-specialties/interventional-cardiology/coronary-interventions/training-and-education/_jcr_content/maincontent-par/image_1537291374.img.ipad.jpg"
+						class="img-fluid rounded-circle  uniform-image" alt="Feature 1">
+				</div>
+				<div class="col-md-6">
+					<h3 class="animated-fadeIn">Easy Contact Storage</h3>
+					<p class="animated-fadeIn">Effortlessly store and manage all your contacts in one place. Your
+						contacts are organized, and you can access them with ease.</p>
+				</div>
+			</div>
+			<div class="row" style="display: flex; align-items: center;" >
+				<div class="col-md-6">
+					<h3 class="animated-fadeIn">Quick Access</h3>
+					<p class="animated-fadeIn">Find and access your contacts with just a few clicks. Our intuitive
+						interface lets you locate the information you need in seconds.</p>
+				</div>
+				<div class="col-md-6 feature-image">
+					<img src="image/contact1.png" class="img-fluid rounded-circle  uniform-image" alt="Feature 2">
+				</div>
+			</div>
+			<div class="row" style="display: flex; align-items: center;">
+				<div class="col-md-6 feature-image">
+					<img src="image/contact2.png" class="img-fluid rounded-circle  uniform-image" alt="Feature 3">
+				</div>
+				<div class="col-md-6">
+					<h3 class="animated-fadeIn">Secure and Private</h3>
+					<p class="animated-fadeIn">Your data is safe and private with advanced security measures. We
+						prioritize the confidentiality and security of your information.</p>
+				</div>
+			</div>
+		</div>
+		</div>
+
+	
+
+		<!-- Footer -->
+		<footer class="footer text-center" style="font-weight: 300; font-size: larger;  ">
+			<div class="container text-center">
+				<p style="margin-bottom: 2rem;">&copy; 2023 Smart Contact Manager</p>
+			</div>
+		</footer>
+	</section>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+@charset "ISO-8859-1";
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background: #e2e2e2 !important;
+}
+
+.bg-primary {
+	background: #009688 !important;
+}
+
+.banner {
+	width: 100%;
+	height: 93vh;
+	background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, 0.8)), url('/image/banner.png');
+	color: white;
+	background-size: cover;
+}
+
+.my-card {
+	padding: 20px;
+	background-color: white;
+
+}
+
+#login .container #login-row #login-column #login-box {
+  margin-top: 120px;
+  max-width: 600px;
+  height: 420px;
+  border: 1px solid #9C9C9C;
+  background-color: white;
+}
+#login .container #login-row #login-column #login-box #login-form {
+  padding: 20px;
+}
+#login .container #login-row #login-column #login-box #login-form #register-link {
+  margin-top: -85px;
+}
+
+
+/*style of size bar*/
+
+@media only screen and (max-width: 600px){
+	.sidebar{
+		display: none;
+		width: 80%!important;
+		background: red;
+		height: 100vh;
+		position: fixed;
+		padding-top: 20px;
+	}
+	.content{
+		margin-left: 0%!important;
+	}
+}
+
+
+.sidebar{
+	width: 18%;
+	background: white;
+	height: 100%;
+	position: fixed;
+	padding-top: 45px;
+	z-index: 99999999;
+}
+.sidebar a{
+	display: block;
+	width:100%;
+	padding: 10px 25px;
+	text-decoration: none;
+	color: gray;
+}
+
+.sidebar a:hover{
+	background-color: #e2e2e2;
+}
+
+.sidebar .divider{
+	height: .5px;
+	width: 100%;
+	background-color: #e2e2e2;
+}
+
+.content{
+	margin-left:20%;	
+}
+
+.sidebar .crossBtn{
+	position: absolute;
+	top:0px;
+	right: 20px;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.my_profile_picture
+{
+	width:35px;
+	height: 35px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+/*search css*/
+.search-container{
+	position: relative;
+}
+.search-result{
+	display: none;
+	position: absolute;
+	background-color: white;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid gray;
+}
+.active{
+	background-color: #009688!important;
+	color: white!important;
+}
+.changeColor{
+	color: white;
+}
+
+.changeColor li a{
+	color: white;
+}
+
+
